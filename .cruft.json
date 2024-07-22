@@ -1,0 +1,26 @@
+{
+  "template": "https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin",
+  "commit": "c40010ce548126347c5fd7b36c2a5031bcd0b34b",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "Lauri Himanen",
+      "email": "lauri.himanen@physik.hu-berlin.de",
+      "github_username": "lauri-codes",
+      "plugin_name": "summary",
+      "module_name": "summary",
+      "short_description": "Nomad example template",
+      "version": "0.1.0",
+      "license": "Apache Software License 2.0",
+      "include_schema_package": false,
+      "include_normalizer": true,
+      "include_parser": false,
+      "include_app": false,
+      "_copy_without_render": [
+        "*.html"
+      ],
+      "_template": "https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin"
+    }
+  },
+  "directory": null
+}
