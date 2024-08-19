@@ -1,17 +1,17 @@
 from nomad.config.models.plugins import NormalizerEntryPoint
-from pydantic import Field
 
 
-class MyNormalizerEntryPoint(NormalizerEntryPoint):
-    parameter: int = Field(0, description='Custom configuration parameter')
-
+class SummaryNormalizerEntryPoint(NormalizerEntryPoint):
     def load(self):
-        from nomad_summary.normalizers.mynormalizer import MyNormalizer
+        from nomad_summary.normalizers.summarynormalizer import SummaryNormalizer
 
-        return MyNormalizer(**self.dict())
+        return SummaryNormalizer(**self.dict())
 
 
-mynormalizer = MyNormalizerEntryPoint(
-    name='MyNormalizer',
-    description='Normalizer defined using the new plugin mechanism.',
+summarynormalizer = SummaryNormalizerEntryPoint(
+    name='SummaryNormalizer',
+    description="""
+    Normalizer that fills archive.summary based on the NOMAD base sections that
+    are present in archive.data
+    """,
 )

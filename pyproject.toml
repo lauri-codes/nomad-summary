@@ -74,7 +74,7 @@ select = [
     "UP",
     # isort
     "I",
-    # pylint 
+    # pylint
     "PL",
 ]
 
@@ -108,9 +108,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
-
-
-mynormalizer = "nomad_summary.normalizers:mynormalizer"
+summarynormalizer = "nomad_summary.normalizers:summarynormalizer"
 
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
