@@ -1,8 +1,8 @@
-site_name: nomad-summary
+site_name: summary
 site_description: Nomad example template
 site_author: Lauri Himanen
 
-repo_url: https://github.com/lauri-codes/nomad-summary
+repo_url: https://github.com/lauri-codes/summary
 edit_uri: ""
 
 nav:
