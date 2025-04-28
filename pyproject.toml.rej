@@ -1,0 +1,21 @@
+diff a/pyproject.toml b/pyproject.toml	(rejected hunks)
+@@ -74,7 +76,7 @@ select = [
+     "UP",
+     # isort
+     "I",
+-    # pylint 
++    # pylint
+     "PL",
+ ]
+ 
+@@ -110,8 +112,9 @@ where = ["src"]
+ [project.entry-points.'nomad.plugin']
+ 
+ 
+-mynormalizer = "nomad_summary.normalizers:mynormalizer"
++normalizer_entry_point = "summary.normalizers:normalizer_entry_point"
+ 
++example_upload_entry_point = "summary.example_uploads:example_upload_entry_point"
+ [tool.cruft]
+ # Avoid updating workflow files, this leads to permissions issues
+ skip = [".github/*"]
