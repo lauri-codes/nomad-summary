@@ -1,4 +1,4 @@
-# Welcome to the `nomad-summary` documentation
+# Welcome to the `summary` documentation
 
 Nomad example template
 
