@@ -7,17 +7,16 @@ classifiers = [
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: Apache Software License",
 ]
-name = "nomad-summary"
+name = "summary"
 description = "Nomad example template"
 version = "0.1.0"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     { name = "Lauri Himanen", email = "lauri.himanen@physik.hu-berlin.de" },
 ]
@@ -25,10 +24,13 @@ maintainers = [
     { name = "Lauri Himanen", email = "lauri.himanen@physik.hu-berlin.de" },
 ]
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab>=1.3.0"]
+dependencies = [
+    "nomad-lab>=1.3.0",
+    "python-magic-bin; sys_platform == 'win32'",
+]
 
 [project.urls]
-Repository = "https://github.com/lauri-codes/nomad-summary"
+Repository = "https://github.com/lauri-codes/summary"
 
 [project.optional-dependencies]
 dev = ["ruff", "pytest", "structlog"]
